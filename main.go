@@ -1,8 +1,14 @@
 package main
 
+import (
+	"fmt"
+
+	"github.com/Christian2310/oop/courses"
+)
+
 func main() {
 	// 	Go is one of the different ways to create an instance of the "Course Struct".
-	GO := Course{
+	GO := courses.Course{
 		Name:   "Go from scratch",
 		Price:  29.99,
 		Free:   false,
@@ -15,4 +21,5 @@ func main() {
 			5: "Methods",
 		},
 	}
+	fmt.Println(GO)
 }
